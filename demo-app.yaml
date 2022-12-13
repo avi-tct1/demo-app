@@ -17,7 +17,10 @@ metadata:
   name: demo-app
 spec:
   strategy:
-    type: Recreate
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 3
+      maxUnavailable: 1
   selector:
     matchLabels:
       app: demo-app
