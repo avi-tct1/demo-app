@@ -6,9 +6,9 @@ metadata:
 data:
   index.html: |
     <html>
-    <h1>Welcome</h1>
+    <h1>Welcome CloudCover</h1>
     </br>
-    <h1>Hi! This is Version 2.0 </h1>
+    <h1>Hi! This is Version 3.0 </h1>
     </html>
 ---
 apiVersion: apps/v1 
@@ -32,7 +32,7 @@ spec:
     spec:
       containers:
       - name: demo-app
-        image: nginx:1.22
+        image: nginx:1.23
         ports:
         - containerPort: 80
         volumeMounts:
